@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from 'react-bootstrap/lib/Button';
-import Modal from 'react-bootstrap/lib/Modal';
+import {Button, Modal} from 'react-bootstrap';
+
 
 class Confirm extends React.Component {
     constructor(props) {
@@ -46,7 +46,7 @@ class Confirm extends React.Component {
 
     render() {
         var cancelButton = this.props.showCancelButton ? (
-            <Button bsStyle="default" onClick={this.onClose}>
+            <Button variant="default" onClick={this.onClose}>
                 {this.props.cancelText}
             </Button>
         ) : null;
@@ -62,7 +62,7 @@ class Confirm extends React.Component {
                 <Modal.Body>{this.props.body}</Modal.Body>
                 <Modal.Footer>
                     {cancelButton}
-                    <Button bsStyle={this.props.confirmBSStyle} onClick={this.onConfirm}>
+                    <Button variant={this.props.confirmBSStyle} onClick={this.onConfirm}>
                         {this.props.confirmText}
                     </Button>
                 </Modal.Footer>

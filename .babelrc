@@ -6,9 +6,9 @@
         "react": "React",
         "prop-types": "PropTypes",
         "react-bootstrap": "ReactBootstrap",
-        "react-bootstrap/lib/Button": "Button",
-        "react-bootstrap/lib/Modal": "Modal",
+        "react-bootstrap/Button": "Button",
+        "react-bootstrap/Modal": "Modal"
       }
     }]
-  ],
+  ]
 }
